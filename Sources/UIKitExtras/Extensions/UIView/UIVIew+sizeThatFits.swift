@@ -6,14 +6,14 @@ extension UIView {
     
     /// Asks the view to calculate and return the height that best fits the specified width.
     @inlinable
-    public func heightThatFits(width: CGFloat) -> CGFloat {
+    public func heightForWidth(_ width: CGFloat) -> CGFloat {
         let size = CGSize(width: width, height: .greatestFiniteMagnitude)
         return sizeThatFits(size).height
     }
     
     /// Asks the view to calculate and return the width that best fits the specified height.
     @inlinable
-    public func widthThatFits(height: CGFloat) -> CGFloat {
+    public func widthForHeight(_ height: CGFloat) -> CGFloat {
         let size = CGSize(width: .greatestFiniteMagnitude, height: height)
         return sizeThatFits(size).width
     }
