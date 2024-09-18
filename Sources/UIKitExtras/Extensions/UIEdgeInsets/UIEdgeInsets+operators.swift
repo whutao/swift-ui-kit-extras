@@ -3,6 +3,7 @@ import UIKit
 
 extension UIEdgeInsets {
     
+    @inlinable
     public static func + (_ lhs: UIEdgeInsets, _ rhs: UIEdgeInsets) -> UIEdgeInsets {
         return UIEdgeInsets(
             top: lhs.top + rhs.top,
@@ -12,6 +13,7 @@ extension UIEdgeInsets {
         )
     }
     
+    @inlinable
     public static func - (_ lhs: UIEdgeInsets, _ rhs: UIEdgeInsets) -> UIEdgeInsets {
         return UIEdgeInsets(
             top: lhs.top - rhs.top,
